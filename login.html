@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booklocker Login</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="icon" type="images/BL.png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="images/BL.png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    
+</head>
+<body>
+
+    <a href="index.html" class="ban-link">
+        <img src="images/BL.png" alt="BookLocker ban" class="ban">
+        <span class="loghom">BOOKLOCKER</span>
+    </a>
+
+    <div class="container d-flex justify-content-center align-items-center vh-100">
+        <div class="row w-100">
+            <div class="col-md-6 offset-md-3 col-lg-4 offset-lg-4">
+                <div class="card shadow-lg">
+                    <!-- Login Form -->
+                    <div class="card-body">
+                        <h3 class="card-title text-center">Sign In</h3>
+                        <form action="">
+                            <div class="form-group">
+                                <label for="username">Username</label>
+                                <input type="email" name="username" class="form-control" id="username" placeholder="Enter your email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <div class="input-group">
+                                    <input type="password" name="password" class="form-control" id="password" placeholder="Enter your password" required>
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">
+                                            <i id="password-toggle" class="fas fa-eye-slash" onclick="togglePasswordVisibility('password')"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" name="remember" class="form-check-input" id="remember-me">
+                                <label class="form-check-label" for="remember-me">Remember me</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block" onclick="validateLogin(event)">Sign In</button>
+                            <p class="mt-3 text-center"><a href="#" data-toggle="modal" data-target="#passwordRetrievalModal">Forgot password?</a></p>
+                            <p class="mt-3 text-center">Don't have an account? <a href="signup.html" id="signup-link">Create one</a></p>
+                            <p id="login-error-message" class="mt-3 text-center text-danger"></p> 
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+            <!-- Password Retrieval Modal -->
+        <div class="modal fade" id="passwordRetrievalModal" tabindex="-1" aria-labelledby="passwordRetrievalModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="passwordRetrievalModalLabel">Retrieve Password</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="passwordRetrievalForm" onsubmit="handlePasswordRetrieval(event)">
+                            <div class="form-group">
+                                <label for="retrieval-email">Email</label>
+                                <input type="email" class="form-control" id="retrieval-email" placeholder="Enter your email" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                        </form>
+                        <p id="retrieval-error-message" class="mt-3 text-center text-danger"></p>
+                        <p id="retrieval-success-message" class="mt-3 text-center text-success"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    <script src="script.js"></script>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

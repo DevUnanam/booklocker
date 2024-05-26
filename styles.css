@@ -503,6 +503,103 @@ section{
     transition: background 0.3s;
 }
 
+.cart{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: $e8f6ea;
+    font-weight: 500;
+    color: #088178;
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 15px;
+    right: 10px;
+}
+
+#cart {
+    overflow: auto;
+}
+
+#cart table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+
+#cart table img {
+    width: 70px;
+}
+
+#cart table td:nth-child(1){
+    width: 100px;
+    text-align: center;
+}
+#cart table td:nth-child(2){
+    width: 150px;
+    text-align: center;
+}
+#cart table td:nth-child(3){
+    width: 250px;
+    text-align: center;
+}
+
+#cart table td:nth-child(4)
+#cart table td:nth-child(5)
+#cart table td:nth-child(6)
+#cart table td:nth-child(7) {
+    width: 200px;
+    text-align: center;
+}
+
+#cart table td:nth-child(6) input{
+    width: 70px;
+    padding: 10px 15px 10px 15px;
+  }
+  
+  #cart table thead {
+    border: 1px solid #e2e9e1;
+    border-left: none;
+    border-right: none;
+  }
+  
+  #cart table thead td{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 18px 0;
+  }
+  
+  #cart table tbody tr td {
+    padding-top: 15px;
+  }
+  
+  #cart table tbody td {
+    font-size: 13px;
+  }
+  
+  #cart-add {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .subtotal {
+    width: 50%;
+    margin-bottom: 30px;
+    border: 1px solid #e2e9e1;
+    padding: 30px;
+  }
+
+  .totalRow,
+  .value {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 13px;
+}
 
 /* General styles for the newsletter section */
 .newsletter {

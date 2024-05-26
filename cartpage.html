@@ -64,80 +64,46 @@
             <!-- header section ends -->
 
             <!-- partial:index.partial.html -->
+            
+            
             <div class="wrap cf">
-            <div class="heading cf">
-                <h1>My Cart</h1>
-                <a href="#" class="continue">Continue Shopping</a>
-            </div>
-            <div class="cart">
-
-                <ul class="cartWrap">
-                    <li class="items odd">
+                <section id="cart" class="section-p1">
+                    <table width="100%">
+                        <thead>
+                            <tr>
+                                <td>Remove</td>
+                                <td>Image</td>
+                                <td>Product</td>
+                                <td>Price</td>
+                                <td>Size</td>
+                                <td>Quantity</td>
+                                <td>Subtotal</td>
+                            </tr>
+                        </thead>
+                        <tbody id="cart-tbody"></tbody>
+                    </table>
+                </section>
+                <div class="heading cf">
+                    <a href="index.html" class="continue">If Not Done, Continue Shopping</a>
                     
-                        <div class="infoWrap"> 
-                            <div class="cartSection">
-                            <img src="images/book11.png" alt="" class="itemImg" />
-                            <p class="itemNumber">#</p>
-                            <h3>Engineering Drawing</h3>
-                            
-                            <p> <input type="text"  class="qty" placeholder="3"/> x $5.00</p>
-                            
-                            <p class="stockStatus"> In Stock</p>
-                            </div>  
-                        
-                            
-                            <div class="prodTotal cartSection">
-                            <p>$15.00</p>
-                            </div>
-                                <div class="cartSection removeWrap">
-                            <a href="#" class="remove">x</a>
-                            </div>
-                        </div>
-                    </li>
-        
-            
-                    <li class="items odd">
-                        <div class="infoWrap"> 
-                            <div class="cartSection">
-                    
-                                <img src="images/book15.png" alt="" class="itemImg" />
-                                <p class="itemNumber">#</p>
-                                <h3>THE PERKS OF BEING A WILD FLOWER</h3>
-                
-                                <p> <input type="text"  class="qty" placeholder="3"/> x N1500.00</p>
-                
-                                <p class="stockStatus out"> Out of Stock</p>
-                            </div>  
-            
-                
-                            <div class="prodTotal cartSection">
-                                <p>$15.00</p>
-                            </div>
-                            <div class="cartSection removeWrap">
-                                <a href="#" class="remove">x</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="items even">
-                        <div class="special"><div class="specialContent">Free gift with purchase!, gift wrap, etc!!</div></div>
-                    </li>
-                </ul>
-            </div>
+                </div>
     
-            <div class="promoCode"><label for="promo">Have A Promo Code?</label><input type="text" name="promo" placholder="Enter Code" />
-            <a href="#" class="btn"></a></div>
+                <div class="promoCode"><label for="promo">Have A Promo Code?</label><input type="text" name="promo" placholder="Enter Code" />
+                    <a href="#" class="btn"></a>
+                </div>
     
-            <div class="subtotal cf">
-            <ul>
-            <li class="totalRow"><span class="label">Subtotal</span><span class="value">$00.00</span></li>
-        
-            <li class="totalRow"><span class="label">Shipping</span><span class="value">$00.00</span></li>
-        
-                <li class="totalRow"><span class="label">Tax</span><span class="value">$00.00</span></li>
-                <li class="totalRow final"><span class="label">Total</span><span class="value">$00.00</span></li>
-                <li class="totalRow"><a href="formval.html" class="btn continue">Checkout</a></li>
-            </ul>
-            </div>
+                <div class="subtotal cf">
+                    <ul>
+                        <li class="totalRow"><span class="label">Subtotal</span><span class="value">$00.00</span></li>
+                
+                        <li class="totalRow"><span class="label">Shipping</span><span class="value">$00.00</span></li>
+                
+                        <li class="totalRow"><span class="label">Tax</span><span class="value">$00.00</span></li>
+                        <li class="totalRow final"><span class="label">Total</span><span class="value">$00.00</span></li>
+                        <li class="totalRow"><a href="formval.html" class="btn continue">Checkout</a></li>
+                
+                    </ul>
+                </div>
             </div>
 
 

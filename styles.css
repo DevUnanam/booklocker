@@ -592,6 +592,11 @@ section{
     padding: 30px;
   }
 
+  .bord{
+    border-radius: 10;
+    font-weight: bolder;
+  }
+
   .totalRow,
   .value {
     border-collapse: collapse;

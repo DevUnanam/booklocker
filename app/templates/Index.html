@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Booklocker</title>
+
+        <link rel="stylesheet" href="static/css/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+        <link rel="website icon" type="png" href="images/BL.png">
+        
+    </head>
+    <body>
+        <header class="header">
+
+            <div class="header-1">
+                
+                
+                <a href="#" class="logo"> 
+                    <img src="static\images\BL.png" alt="BookLocker Logo">
+                    <span>BookLocker</span> 
+                </a>
+        
+                <form class="search-form" id="search-form">
+                    <input type="text" id="search-input" placeholder="search here..." id="search-box">
+                    <button type="submit" id="search-btn">Search</button>
+                    <label for="search-btn" class="fas fa-search"></label>
+                </form>
+        
+                <div class="icons">
+                    
+                    <a href="cartpage.html" class="fas fa-shopping-cart"></a>
+                    <a href="{{ url_for('login') }}" class="fas fa-user" id="login-btn"></a>
+                </div>
+        
+            </div>
+
+            <div id="autocomplete-results"></div>
+        
+            <div class="header-2">
+                <nav class="navbar">
+                    <a href="#home">home</a>
+                    <a href="#featured">featured</a>
+                    <a href="#genre">Genre</a>
+                    <a href="#reviews">reviews</a>
+                </nav>
+            </div>
+        
+        </header>
+
+        <section class="search-results" id="search-results"></section>
+
+        <section class="home" id="home">
+
+            <div class="row">
+        
+                <div class="content-box">
+                    <div class="content">
+                        <h3>upto 75% off</h3>
+                        <p>Booklcoker is your sure plug for any kind of books you could possibly be in need of.</p>
+                        <a href="#" class="btn">shop now</a>
+                    </div>
+                
+                    <div class="books-images">
+                        <div class="book-image">
+                            <a href="product1.html"><img src="static\images\book1.png" alt="Book 1"></a>
+                        </div>
+                        <div class="book-image">
+                            <a href="product2.html"><img src="static\images\book2.png" alt="Book 2"></a>
+                        </div>
+                        <div class="book-image">
+                            <a href="product4.html"><img src="static\images\book4.png" alt="Book 4"></a>
+                        </div>
+                        <div class="book-image">
+                            <a href="product5.html"><img src="static\images\book5.png" alt="Book 5"></a>
+                        </div>
+                        <div class="book-image">
+                            <a href="product6.html"><img src="static\images\book6.png" alt="Book 6"></a>
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
+        
+        </section>
+        
+        <section class="icons-container">
+
+            <div class="icons">
+                <i class="fas fa-shipping-fast"></i>
+                <div class="content">
+                    <h3>free shipping</h3>
+                    <p>order over $100</p>
+                </div>
+            </div>
+        
+            <div class="icons">
+                <i class="fas fa-lock"></i>
+                <div class="content">
+                    <h3>secure payment</h3>
+                    <p>100 secure payment</p>
+                </div>
+            </div>
+        
+            <div class="icons">
+                <i class="fas fa-redo-alt"></i>
+                <div class="content">
+                    <h3>easy returns</h3>
+                    <p>10 days returns</p>
+                </div>
+            </div>
+        
+            <div class="icons">
+                <i class="fas fa-headset"></i>
+                <div class="content">
+                    <h3>24/7 support</h3>
+                    <p>call us anytime</p>
+                </div>
+            </div>
+        
+        </section>
+        
+        <!-- icons section ends -->
+        
+        <!-- featured section starts  -->
+        
+        <section class="featured" id="featured">
+            <h1 class="heading"> <span>featured books</span> </h1>
+            <div class="featured-container">
+                <div class="box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <a href="product7.html"> <img src="static\images\book7.png" alt="A Dictionary of Symbols"> </a>
+                    </div>
+                    <div class="content">
+                        <h3>featured books</h3>
+                        <div class="price">N2500.00 <span>N3000.00</span></div>
+                        <a href="./cartpage.html" class="btn add-to-cart">add to cart</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <a href="product8.html"> <img src="static\images\book8.png" alt="Book 2"> </a>
+                    </div>
+                    <div class="content">
+                        <h3>featured books</h3>
+                        <div class="price">N1000.00 <span>N4500.00</span></div>
+                        <a href="./cartpage.html" class="btn add-to-cart">add to cart</a>
+                    </div>
+                </div>
+                
+                <div class="box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <a href="product9.html"> <img src="static\images\book9.png" alt="Book 4"> </a>
+                    </div>
+                    <div class="content">
+                        <h3>featured books</h3>
+                        <div class="price">N800.00 <span>N2000.00</span></div>
+                        <a href="./cartpage.html" class="btn add-to-cart">add to cart</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <a href="product10.html"> <img src="static\images\book10.png" alt="Book 5"> </a>
+                    </div>
+                    <div class="content">
+                        <h3>featured books</h3>
+                        <div class="price">N500.00 <span>N900.00</span></div>
+                        <a href="./cartpage.html" class="btn add-to-cart">add to cart</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <a href="product11.html"> <img src="static\images\book11.png" alt="Book 6"> </a>
+                    </div>
+                    <div class="content">
+                        <h3>featured books</h3>
+                        <div class="price">2000.00 <span>N3000.00</span></div>
+                        <a href="./cartpage.html" class="btn add-to-cart">add to cart</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+                    <div class="image">
+                        <a href="product12.html"> <img src="static\images\book12.png" alt="Book 7"> </a>
+                    </div>
+                    <div class="content">
+                        <h3>featured books</h3>
+                        <div class="price">N1200.00 <span>N2000.00</span></div>
+                        <a href="./cartpage.html" class="btn add-to-cart">add to cart</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- featured section ends -->
+
+        <section class="arrivals" id="genre">
+            <h1 class="heading"> <span>GENRE</span> </h1>
+        
+            <div class="arrivals-container">
+                <a href="#" class="box">
+                    <div class="image">
+                        <img src="static\images\book13.png" alt="Romance">
+                    </div>
+                    <div class="content">
+                        <h3>Romance</h3>
+                    </div>
+                </a>
+        
+                <a href="#" class="box">
+                    <div class="image">
+                        <img src="static\images\book22.png" alt="Fiction">
+                    </div>
+                    <div class="content">
+                        <h3>Fiction</h3>
+                    </div>
+                </a>
+        
+                <a href="#" class="box">
+                    <div class="image">
+                        <img src="static\images\book23.png" alt="Biography">
+                    </div>
+                    <div class="content">
+                        <h3>Biography</h3>
+                    </div>
+                </a>
+        
+                <a href="#" class="box">
+                    <div class="image">
+                        <img src="static\images\book24.png" alt="History">
+                    </div>
+                    <div class="content">
+                        <h3>History</h3>
+                    </div>
+                </a>
+        
+                <a href="#" class="box">
+                    <div class="image">
+                        <img src="static\images\book25.png" alt="Kiddies">
+                    </div>
+                    <div class="content">
+                        <h3>Kiddies</h3>
+                    </div>
+                </a>
+        
+                <a href="#" class="box">
+                    <div class="image">
+                        <img src="static\images\book26.png" alt="Educational">
+                    </div>
+                    <div class="content">
+                        <h3>Educational</h3>
+                    </div>
+                </a>
+        
+                <a href="#" class="box">
+                    <div class="image">
+                        <img src="static\images\book27.png" alt="Religion">
+                    </div>
+                    <div class="content">
+                        <h3>Religion</h3>
+                    </div>
+                </a>
+        
+                <a href="#" class="box">
+                    <div class="image">
+                        <img src="static\images\book16.png" alt="Self-Help">
+                    </div>
+                    <div class="content">
+                        <h3>Self-Help</h3>
+                    </div>
+                </a>
+
+                <a href="#" class="box">
+                    <div class="image">
+                        <img src="static\images\book18.png" alt="Business">
+                    </div>
+                    <div class="content">
+                        <h3>Business</h3>
+                    </div>
+                </a>
+            </div>
+        </section>
+        
+        <section class="deal">
+            <div class="content">
+                <h3>deal of the day</h3>
+                <h1>upto 50% off</h1>
+                <p>Check this out before it expires!!!</p>
+                <a href="./product3.html" class="btn">shop now</a>
+            </div>
+        
+            <div class="image">
+                <img src="static\images\book3.png" alt="Deal of the day">
+            </div>
+        </section>
+        
+
+        <section class="reviews" id="reviews">
+            <h1 class="heading"> <span>client's reviews</span> </h1>
+            <div class="reviews-container">
+                <div class="box">
+                    <img src="images/book2.png" alt="Ujjwal">
+                    <h3>Ejike Kalu</h3>
+                    <p>Love the service</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="images/book3.png" alt="Marry">
+                    <h3>Mary Don</h3>
+                    <p>Best book store!!!.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="images/book4.png" alt="Raghu">
+                    <h3>Rajuno John</h3>
+                    <p>Payment service is good!!</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="images/book3.png" alt="Pooja">
+                    <h3>Manuel Steve</h3>
+                    <p>This is very cool stuff.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="images/book4.png" alt="Abhinav">
+                    <h3>Abdul Rasheed</h3>
+                    <p>The user interface is very easy</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="images/book4.png" alt="Siddhi">
+                    <h3>Steve Egbe</h3>
+                    <p>Great Work.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter">
+        
+            <form action="">
+                <h3>Stay up to date with our latest updates</h3>
+                <input type="email" name="" placeholder="enter your email" id="" class="box">
+                <input type="submit" value="subscribe" class="btn">
+            </form>
+
+            <div id="newsletter-message"></div>
+        
+        </section>
+        
+
+        <section class="footer">
+
+            <div class="box-container">
+        
+                <div class="box">
+                    <h3>our locations</h3>
+                    <a href="#"> <i class="fas fa-map-marker-alt"></i> Nigeria </a>
+                </div>
+        
+                <div class="box">
+                    <h3>quick links</h3>
+                    <a href="#home"> <i class="fas fa-arrow-right"></i> home </a>
+                    <a href="#featured"> <i class="fas fa-arrow-right"></i> featured </a>
+                    <a href="#genre"> <i class="fas fa-arrow-right"></i> Category </a>
+                    <a href="#reviews"> <i class="fas fa-arrow-right"></i> reviews </a>
+                </div>
+        
+                <div class="box">
+                    <h3>extra links</h3>
+                    <a href="#"> <i class="fas fa-arrow-right"></i> account info </a>
+                    <a href="#"> <i class="fas fa-arrow-right"></i> ordered items </a>
+                    <a href="#"> <i class="fas fa-arrow-right"></i> privacy policy </a>
+                    <a href="#"> <i class="fas fa-arrow-right"></i> payment method </a>
+                    <a href="#"> <i class="fas fa-arrow-right"></i> our serivces </a>
+                </div>
+        
+                <div class="box">
+                    <h3>contact info</h3>
+                    <a href="#"> <i class="fas fa-phone"></i> 07033306380</a>
+                    <a href="#"> <i class="fas fa-phone"></i> 07053830422 </a>
+                    <a href="#"> <i class="fas fa-envelope"></i> djdrjay001@gmail.com </a>
+                    <a href="#"> <i class="fas fa-envelope"></i> Riaahh20@yahoo.com </a>
+                </div>
+        
+            </div>
+        
+            <div class="share">
+                <a href="https://x.com/EmasenyeUnanam" class="fab fa-twitter"></a>
+                <a href="https://x.com/jassmenn16?s=09" class="fab fa-twitter"></a>
+                <a href="https://www.linkedin.com/in/victoria-unanam/" class="fab fa-linkedin"></a>
+                <a href="https://www.linkedin.com/in/jamiu-shomoye-706b39a7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app " class="fab fa-linkedin"></a>
+            </div>
+        
+            <div class="credit"> Developed by <span>Unanam Victoria and Shomoye Jamiu </span>copyright ©2024 all rights reserved! </div>
+        
+        </section>
+        
+        
+        
+        
+        <script src="script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://js.paystack.co/v1/inline.js"></script> 
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    </body>
+</html>
